@@ -40,5 +40,5 @@ def makeIdeaProject(jarName):
 
 if __name__=="__main__":
     doDecompile(javaPath, jarPath)
-    doUnzip(jarPath)
-    makeIdeaProject(jarPath)
+    doUnzip(os.path.basename(jarPath))
+    makeIdeaProject(os.path.basename(jarPath))
